@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: green;
+    display: flex;
+    /*flex-direction属性决定主轴的方向（即项目的排列方向）。
+    flex-direction: row | row-reverse | column | column-reverse;*/
+    flex-direction: row;
+    /*flex-wrap属性定义，如果一条轴线排不下，如何换行。
+    flex-wrap: nowrap | wrap | wrap-reverse;*/
+    flex-wrap: wrap;
+    /* justify-content属性定义了项目在主轴上的对齐方式。
+    justify-content: flex-start | flex-end | center | space-between | space-around;*/
+    justify-content: flex-start;
+    /* align-items属性定义项目在交叉轴上如何对齐。控制每一个元素
+    align-items: flex-start | flex-end | center | baseline | stretch(默认); */
+    align-items: stretch;
+
+    /* align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。控制整体元素
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;*/
+    align-content: flex-start;
+}
+
+.container>div {
+    width: 21vw;
+    height: 21vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 4vh;
+    text-align: center;
+    line-height: 21vh;
+    background-color: blue;
+}
